@@ -10,8 +10,8 @@ public class Employee {
 
     @Id
     private long id;
-    private String FirstName;
-    private String LastName;
+    private String firstName;
+    private String lastName;
     private String emailId;
 
     public Employee()
@@ -21,8 +21,8 @@ public class Employee {
 
     public Employee(String firstName, String lastName, String emailId) {
         super();
-        this.FirstName = firstName;
-        this.LastName = lastName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.emailId = emailId;
     }
 
@@ -35,19 +35,19 @@ public class Employee {
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getEmailId() {
@@ -62,8 +62,8 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id=" + id +
-                ", FirstName='" + FirstName + '\'' +
-                ", LastName='" + LastName + '\'' +
+                ", FirstName='" + firstName + '\'' +
+                ", LastName='" + lastName + '\'' +
                 ", emailId='" + emailId + '\'' +
                 '}';
     }
